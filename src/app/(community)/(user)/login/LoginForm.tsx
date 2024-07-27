@@ -53,10 +53,12 @@ export default function LoginForm() {
           비밀번호를 잊으셨나요?
         </Link>
       </div>
-      <div className="mt-10 colums-4">
-        <Submit formAction={signInWithCredentials}> 로그인</Submit>
-        <Submit formAction={signInWithGoogle}>구글로그인</Submit>
-        <Submit formAction={signInWithGithub}>깃허브 로그인</Submit>
+      <div className="mt-10">
+        <div className="flex space-x-4">
+          <Submit formAction={signInWithCredentials}> 로그인</Submit>
+          <Submit formAction={signInWithGoogle}>구글로그인</Submit>
+          <Submit formAction={signInWithGithub}>깃허브 로그인</Submit>
+        </div>
         <Link href="/signup" className="ml-8 text-gray-800 hover:underline">
           회원가입
         </Link>
